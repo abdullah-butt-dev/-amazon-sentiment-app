@@ -1,0 +1,34 @@
+# ─── VIRTUAL ENVIRONMENTS ───
+venv/
+.venv/
+env/
+ENV/
+
+# ─── MACHINE LEARNING MODELS & WEIGHTS ───
+# Stops massive serialized model files from slowing down your git pushes
+*.pkl
+*.pickle
+*.joblib
+
+# ─── DATASETS & RAW LOGS ───
+# Prevents giant raw Amazon CSV files or system sheets from leaking into code history
+data/
+*.csv
+*.xlsx
+*.tsv
+*.json
+!app/  # Allow json configurations if you have any in your app folder
+
+# ─── PYTHON CACHE & SYSTEM UTILITIES ───
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# ─── GENERATED REPORTS ───
+# Keeps your workspace pristine; ensures generated stakeholder outputs stay local
+reports/
+*.html

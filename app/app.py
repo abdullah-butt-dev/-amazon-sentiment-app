@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import pickle
 import pandas as pd
 import numpy as np
@@ -55,14 +56,22 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+
 # ─── LOAD MODELS ────────────────────────────────────────────────
 @st.cache_resource
 def load_models():
-    with open('app/tfidf_vectorizer.pkl', 'rb') as f:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    
+    tfidf_path = os.path.join(BASE_DIR, 'tfidf_vectorizer.pkl')
+    lr_path = os.path.join(BASE_DIR, 'lr_model.pkl')
+    
+    with open(tfidf_path, 'rb') as f:
         tfidf = pickle.load(f)
-    with open('app/lr_model.pkl', 'rb') as f:
+    with open(lr_path, 'rb') as f:
         lr = pickle.load(f)
+        
     return tfidf, lr
+
 
 tfidf, lr = load_models()
 sia = SentimentIntensityAnalyzer()

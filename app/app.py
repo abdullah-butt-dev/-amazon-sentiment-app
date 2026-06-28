@@ -16,6 +16,8 @@ import plotly.graph_objects as go
 nltk.download('vader_lexicon', quiet=True)
 nltk.download('stopwords', quiet=True)
 nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+
 
 # ─── PAGE CONFIG ────────────────────────────────────────────────
 st.set_page_config(

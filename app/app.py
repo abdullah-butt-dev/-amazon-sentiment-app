@@ -58,9 +58,9 @@ st.markdown("""
 # ─── LOAD MODELS ────────────────────────────────────────────────
 @st.cache_resource
 def load_models():
-    with open('tfidf_vectorizer.pkl', 'rb') as f:
+    with open('app/tfidf_vectorizer.pkl', 'rb') as f:
         tfidf = pickle.load(f)
-    with open('lr_model.pkl', 'rb') as f:
+    with open('app/lr_model.pkl', 'rb') as f:
         lr = pickle.load(f)
     return tfidf, lr
 

@@ -5,7 +5,7 @@ An end-to-end NLP pipeline evaluating three separate sentiment classification te
 
 ## 🚀 Live Interactive App
 Experience the live application deployment inside your browser instantly:
-👉 **[Launch Live Streamlit Application Engine → amazon-sentiment-analyzer.streamlit.app](https://amazon-sentiment-analyzer.streamlit.app)**
+👉 **[Live Preview](https://amazon-reviews-sentiment-analyzer.streamlit.app)**
 
 ---
 
@@ -17,7 +17,7 @@ Experience the live application deployment inside your browser instantly:
 
 ### 2. Bulk Business Analytics Module
 ![Bulk Spreadsheet Processor Demo](images/bulk_demo.png)
-*Figure 2: Automatic CSV upload parsing visual pie distributions and generating downloadable下游 processed datasets.*
+*Figure 2: Automatic CSV upload parsing visual pie distributions and generating downloadable processed datasets.*
 
 ---
 
